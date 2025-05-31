@@ -4,6 +4,6 @@
 //constantes globales
 
 //declaracion de la funcion
-export function ProductList () {
+export default function ProductList () {
     return <>Hola soy el ProductList</>
 }
