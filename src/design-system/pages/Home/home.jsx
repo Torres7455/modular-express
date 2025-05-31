@@ -1,6 +1,7 @@
 import { Tabs, Card, Row, Col, Button, List, Typography, message, Input } from "antd";
 import { useState } from "react";
-
+import Searcher from "../../templates/home/searcher/searcher"
+import "./home.css";
 const { Meta } = Card;
 const { Title, Text } = Typography;
 
@@ -112,15 +113,16 @@ export default function Home() {
   };
 
   return (
-    <div style={{ fontFamily: "sans-serif" }}>
+    <div >
+
       {/* Encabezado */}
-      <div style={{ background: "#b40101", color: "white", padding: 24, display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-        <Title style={{ margin: 0, color: "white" }} level={3}>
+      <div className="header-container" >
+        <Title  level={3}>
           Modular Express
         </Title>
 
-        <div style={{ marginTop: 16, fontSize: 16, lineHeight: 1.5, maxWidth: 800 }}>
-          <Title level={4} style={{ color: "white", marginBottom: 12 }}>
+        <div>
+          <Title level={4} >
             ¿Por qué elegir Modular Express?
           </Title>
 
@@ -131,7 +133,7 @@ export default function Home() {
 
           <p>A diferencia de la competencia, nuestros clientes disfrutan de:</p>
 
-          <ul style={{ paddingLeft: 20 }}>
+          <ul >
             <li>✅ Entregas en tiempos récord</li>
             <li>✅ Planos y diseños personalizados incluidos</li>
             <li>✅ Asesoría legal y técnica gratuita</li>
@@ -143,25 +145,17 @@ export default function Home() {
 
       {/* Hero */}
       <div
-        style={{
-          backgroundImage: "url('https://via.placeholder.com/1200x400?text=Imagen+Principal')",
-          backgroundSize: "cover",
-          height: 400,
-          display: "flex",
-          alignItems: "center",
-          paddingLeft: 50,
-          color: "white",
-        }}
+        
       >
         <div>
-          <Title level={2} style={{ color: "white" }}>Casa en Residencial Bello Oeste</Title>
+          <Title level={2} >Casa en Residencial Bello Oeste</Title>
           <p>Con hermosa vista a la ciudad y acabados de lujo</p>
-          <Button type="primary" size="large" style={{ background: "red", border: "none" }}>Conozca más</Button>
+          <Button type="primary" size="large" >Conozca más</Button>
         </div>
       </div>
 
       {/* Buscador */}
-      <div style={{ background: "#fff", padding: 24, marginTop: -30, boxShadow: "0 4px 8px rgba(0,0,0,0.1)" }}>
+      <div >
         <Title level={4}>Encuentre su Módulo</Title>
         <Row gutter={16}>
           <Col span={6}>
@@ -196,12 +190,12 @@ export default function Home() {
       </div>
 
       {/* Tabs de propiedades */}
-      <div style={{ padding: 24 }}>
+      <div >
         <Tabs defaultActiveKey="casas" items={items} />
       </div>
 
       {/* Carrito */}
-      <div style={{ padding: 24, background: "#fafafa" }}>
+      <div >
         <Title level={4}>🛒 Carrito de compras</Title>
         {cart.length === 0 ? (
           <p>Tu carrito está vacío.</p>
@@ -222,9 +216,9 @@ export default function Home() {
                 </List.Item>
               )}
             />
-            <div style={{ marginTop: 16, textAlign: "right" }}>
+            <div >
               <Text strong>Total: ${total.toLocaleString()}</Text>
-              <div style={{ marginTop: 8 }}>
+              <div >
                 <Button type="primary" onClick={handleCheckout}>
                   Finalizar compra
                 </Button>
@@ -235,8 +229,8 @@ export default function Home() {
       </div>
 
       {/* Servicios */}
-      <div style={{ background: "#002244", color: "white", padding: 50 }}>
-        <Title level={3} style={{ color: "white", textAlign: "center" }}>Conozca nuestros servicios</Title>
+      <div >
+        <Title level={3} >Conozca nuestros servicios</Title>
         <Row gutter={[16, 16]} justify="center">
           <Col xs={24} sm={12} md={6}><div>📌 Asesoría Legal</div></Col>
           <Col xs={24} sm={12} md={6}><div>🧾 Diseños y Planos</div></Col>
@@ -244,11 +238,9 @@ export default function Home() {
           <Col xs={24} sm={12} md={6}><div>👨‍💼 Servicios de Topografía</div></Col>
         </Row>
       </div>
-
-      {/* Footer */}
-      <div style={{ background: "#b40101", color: "white", textAlign: "center", padding: 20 }}>
-        © 2025 Modular Express
-      </div>
+      <section>
+       <Searcher></Searcher> 
+      </section>
     </div>
   );
 }
