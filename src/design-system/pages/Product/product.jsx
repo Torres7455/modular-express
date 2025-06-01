@@ -1,6 +1,6 @@
 import DescripcionProducto from "../../templates/Producto/descripcion-producto/descripcionProducto";
 import ViewImage from "../../templates/Producto/viewimage/viewImage";
-import products from "../../../../DB/products.json";
+import products from "../../../../DB/inmuebles_ejemplo.json";
 import { useEffect, useState } from "react";
 
 export default function Product() {
