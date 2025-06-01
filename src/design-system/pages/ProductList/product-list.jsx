@@ -1,4 +1,6 @@
 import { Table, Typography, Row, Col } from "antd";
+import products from '../../../../DB/products.json'
+import Lista from "../../templates/ProductList/lista/lista";
 
 const { Title, Paragraph, Text } = Typography;
 
@@ -114,6 +116,8 @@ export default function ModulesComparison() {
           </ul>
         </Col>
       </Row>
+
+      <Lista products={products} />
     </div>
   );
 }
