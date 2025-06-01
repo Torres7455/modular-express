@@ -18,12 +18,14 @@ export default function Product() {
 
   return (
     <>
+    <img src="public\Logo.jpeg" alt="" />
       <section>
         <ViewImage data={product} />
       </section>
       <section>
         <DescripcionProducto data={product} />
       </section>
+      <img src="public\Logo.jpeg" alt="" />
     </>
   );
 }
