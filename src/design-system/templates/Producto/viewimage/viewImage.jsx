@@ -1,4 +1,4 @@
-import "./viewImage.css"; // Asegúrate de importar el CSS
+import "./viewimage.css"; // Asegúrate de importar el CSS
 
 export default function ViewImage({ data }) {
   return (
