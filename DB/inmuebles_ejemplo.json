@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "tipo": "apartamento",
+        "tipo": "Apartamento",
         "descripcion": "Cómodo apartamento en zona residencial.",
         "direccion": "Calle 1 #89-45, Barranquilla",
         "detalles": "3 habitaciones, 2 baños, cocina integral.",
@@ -16,11 +16,11 @@
     },
     {
         "id": 2,
-        "tipo": "casa",
+        "tipo": "Casa",
         "descripcion": "Amplia casa con jardín y garaje.",
         "direccion": "Transversal 65 #33-22, Cali",
         "detalles": "1 oficina principal, sala de reuniones, cafetería.",
-        "precio": 456840440,
+        "precio": "$456.840.440",
         "imagenes": [
             "img5.jpg",
             "img2.jpg",
@@ -31,11 +31,11 @@
     },
     {
         "id": 3,
-        "tipo": "oficina",
+        "tipo": "Oficina",
         "descripcion": "Moderna oficina ubicada en zona empresarial.",
         "direccion": "Avenida 93 #5-38, Bogotá",
         "detalles": "2 habitaciones, 1 baño, sala-comedor.",
-        "precio": 162213961,
+        "precio": "$162.213.961",
         "imagenes": [
             "img1.jpg",
             "img3.jpg"
@@ -44,11 +44,11 @@
     },
     {
         "id": 4,
-        "tipo": "oficina",
+        "tipo": "Oficina",
         "descripcion": "Moderna oficina ubicada en zona empresarial.",
         "direccion": "Carrera 79 #53-3, Barranquilla",
         "detalles": "3 habitaciones, 2 baños, cocina integral.",
-        "precio": 574083233,
+        "precio": "$574.083.233",
         "imagenes": [
             "img2.jpg",
             "img1.jpg",
@@ -60,11 +60,11 @@
     },
     {
         "id": 5,
-        "tipo": "oficina",
+        "tipo": "Oficina",
         "descripcion": "Moderna oficina ubicada en zona empresarial.",
         "direccion": "Calle 83 #89-30, Cartagena",
         "detalles": "1 oficina principal, sala de reuniones, cafetería.",
-        "precio": 353042035,
+        "precio": "$353.042.035",
         "imagenes": [
             "img5.jpg",
             "img2.jpg",
@@ -75,11 +75,11 @@
     },
     {
         "id": 6,
-        "tipo": "casa",
+        "tipo": "Casa",
         "descripcion": "Amplia casa con jardín y garaje.",
         "direccion": "Avenida 4 #87-38, Cartagena",
         "detalles": "2 habitaciones, 1 baño, sala-comedor.",
-        "precio": 686350319,
+        "precio": "$686.350.319",
         "imagenes": [
             "img2.jpg",
             "img5.jpg",
@@ -91,11 +91,11 @@
     },
     {
         "id": 7,
-        "tipo": "apartamento",
+        "tipo": "Apartamento",
         "descripcion": "Cómodo apartamento en zona residencial.",
         "direccion": "Avenida 78 #76-40, Bogotá",
         "detalles": "2 habitaciones, 1 baño, sala-comedor.",
-        "precio": 504214142,
+        "precio": "$504.214.142",
         "imagenes": [
             "img2.jpg",
             "img3.jpg",
@@ -105,11 +105,11 @@
     },
     {
         "id": 8,
-        "tipo": "casa",
+        "tipo": "Casa",
         "descripcion": "Amplia casa con jardín y garaje.",
         "direccion": "Transversal 76 #66-28, Medellín",
         "detalles": "1 oficina principal, sala de reuniones, cafetería.",
-        "precio": 549230132,
+        "precio": "$549.230.132",
         "imagenes": [
             "img1.jpg",
             "img2.jpg",
@@ -119,11 +119,11 @@
     },
     {
         "id": 9,
-        "tipo": "apartamento",
+        "tipo": "Apartamento",
         "descripcion": "Cómodo apartamento en zona residencial.",
         "direccion": "Transversal 92 #3-43, Cali",
         "detalles": "2 habitaciones, 1 baño, sala-comedor.",
-        "precio": 798756769,
+        "precio": "$798.756.769",
         "imagenes": [
             "img3.jpg",
             "img5.jpg",
@@ -133,11 +133,11 @@
     },
     {
         "id": 10,
-        "tipo": "apartamento",
+        "tipo": "Apartamento",
         "descripcion": "Cómodo apartamento en zona residencial.",
         "direccion": "Calle 62 #59-37, Medellín",
         "detalles": "3 habitaciones, 2 baños, cocina integral.",
-        "precio": 317358796,
+        "precio": "$317.358.796",
         "imagenes": [
             "img3.jpg",
             "img5.jpg",

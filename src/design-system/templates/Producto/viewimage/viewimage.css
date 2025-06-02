@@ -1,0 +1,14 @@
+.view-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.view-image {
+  width: 320px;       /* Puedes cambiar este valor si quieres más pequeña */
+  max-width: 90%;     /* Para que sea responsive en móviles */
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}

@@ -1,7 +1,9 @@
-export default function ViewImage(data) {
+import "./viewImage.css"; // Asegúrate de importar el CSS
+
+export default function ViewImage({ data }) {
   return (
-    <>
-      <img className="presentation-image"  src={data?.data?.imagen_default} alt="" />
-    </>
+    <div className="view-image-container">
+      <img className="view-image" src={data.imagen_default} alt={data.tipo} />
+    </div>
   );
 }
