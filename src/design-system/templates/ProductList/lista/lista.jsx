@@ -10,7 +10,7 @@ export default function Lista({ products }) {
       {products.map((item) => (
         <div key={item.id} className="card">
           <img
-            src={`/img/${item.imagen_default}`}
+            src={`${item.imagen_default}`}
             alt={item.tipo}
             className="card-img"
           />
@@ -23,7 +23,7 @@ export default function Lista({ products }) {
 
             <button
               className="buy-button"
-              onClick={() => navigate(`/producto?id=${item.id}`)}
+              onClick={() => navigate(`/product?id=${item.id}`)}
             >
               Comprar
             </button>
