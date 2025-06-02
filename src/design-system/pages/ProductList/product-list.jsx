@@ -6,86 +6,24 @@ import './ProductList.css';
 const { Title, Paragraph, Text } = Typography;
 
 const modulesData = [
-  {
-    key: '1',
-    title: 'Casa Moderna',
-    category: 'Casa',
-    rooms: 3,
-    bathrooms: 2,
-    area: '120 m²',
-    price: 150000,
-  },
-  {
-    key: '2',
-    title: 'Casa Compacta',
-    category: 'Casa',
-    rooms: 2,
-    bathrooms: 1,
-    area: '85 m²',
-    price: 100000,
-  },
-  {
-    key: '3',
-    title: 'Edificio Comercial',
-    category: 'Edificio',
-    rooms: '-',
-    bathrooms: '-',
-    area: '500 m²',
-    price: 500000,
-  },
-  {
-    key: '4',
-    title: 'Oficina Premium',
-    category: 'Oficina',
-    rooms: '-',
-    bathrooms: 1,
-    area: '60 m²',
-    price: 90000,
-  },
+  // ... tu data como está ...
 ];
 
 const columns = [
-  {
-    title: 'Módulo',
-    dataIndex: 'title',
-    key: 'title',
-    render: text => <Text strong>{text}</Text>,
-  },
-  {
-    title: 'Categoría',
-    dataIndex: 'category',
-    key: 'category',
-  },
-  {
-    title: 'Habitaciones',
-    dataIndex: 'rooms',
-    key: 'rooms',
-    align: 'center',
-  },
-  {
-    title: 'Baños',
-    dataIndex: 'bathrooms',
-    key: 'bathrooms',
-    align: 'center',
-  },
-  {
-    title: 'Área',
-    dataIndex: 'area',
-    key: 'area',
-    align: 'center',
-  },
-  {
-    title: 'Precio',
-    dataIndex: 'price',
-    key: 'price',
-    align: 'right',
-    render: (price) => `$${price.toLocaleString()}`,
-  },
+  // ... tus columnas como están ...
 ];
 
 export default function ModulesComparison() {
  return (
   <div className="productlist-container">
+
+    {/* Imagen agregada */}
+    <img
+      src="/img/img3.jpg"
+      alt="Imagen Representativa"
+      style={{ width: '300px', marginBottom: '20px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }}
+    />
+
     <Title level={2} className="productlist-title">
       Compare Nuestros Módulos Prefabricados
     </Title>
@@ -119,7 +57,9 @@ export default function ModulesComparison() {
     </Row>
 
     <Lista products={products} />
+
   </div>
-);
+ );
 }
+
 

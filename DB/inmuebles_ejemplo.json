@@ -54,6 +54,7 @@
             "img1.jpg",
             "img4.jpg",
             "img5.jpg"
+            
         ],
         "imagen_default": "img2.jpg"
     },
@@ -68,6 +69,7 @@
             "img5.jpg",
             "img2.jpg",
             "img3.jpg"
+
         ],
         "imagen_default": "img5.jpg"
     },
@@ -143,132 +145,6 @@
             "img4.jpg"
         ],
         "imagen_default": "img3.jpg"
-    },
-    {
-        "id": 11,
-        "tipo": "oficina",
-        "descripcion": "Moderna oficina ubicada en zona empresarial.",
-        "direccion": "Carrera 26 #79-15, Barranquilla",
-        "detalles": "2 habitaciones, 1 baño, sala-comedor.",
-        "precio": 771137738,
-        "imagenes": [
-            "img5.jpg",
-            "img4.jpg",
-            "img1.jpg",
-            "img3.jpg",
-            "img2.jpg"
-        ],
-        "imagen_default": "img5.jpg"
-    },
-    {
-        "id": 12,
-        "tipo": "oficina",
-        "descripcion": "Moderna oficina ubicada en zona empresarial.",
-        "direccion": "Transversal 100 #64-37, Barranquilla",
-        "detalles": "3 habitaciones, 2 baños, cocina integral.",
-        "precio": 386893791,
-        "imagenes": [
-            "img4.jpg",
-            "img1.jpg"
-        ],
-        "imagen_default": "img4.jpg"
-    },
-    {
-        "id": 13,
-        "tipo": "casa",
-        "descripcion": "Amplia casa con jardín y garaje.",
-        "direccion": "Transversal 99 #40-11, Cali",
-        "detalles": "2 habitaciones, 1 baño, sala-comedor.",
-        "precio": 518827016,
-        "imagenes": [
-            "img3.jpg",
-            "img1.jpg",
-            "img2.jpg",
-            "img4.jpg"
-        ],
-        "imagen_default": "img3.jpg"
-    },
-    {
-        "id": 14,
-        "tipo": "oficina",
-        "descripcion": "Moderna oficina ubicada en zona empresarial.",
-        "direccion": "Transversal 76 #16-22, Cartagena",
-        "detalles": "1 oficina principal, sala de reuniones, cafetería.",
-        "precio": 362002041,
-        "imagenes": [
-            "img3.jpg",
-            "img4.jpg",
-            "img1.jpg",
-            "img2.jpg"
-        ],
-        "imagen_default": "img3.jpg"
-    },
-    {
-        "id": 15,
-        "tipo": "apartamento",
-        "descripcion": "Cómodo apartamento en zona residencial.",
-        "direccion": "Calle 14 #41-14, Medellín",
-        "detalles": "4 habitaciones, 3 baños, patio trasero, garaje.",
-        "precio": 604734729,
-        "imagenes": [
-            "img2.jpg",
-            "img1.jpg"
-        ],
-        "imagen_default": "img2.jpg"
-    },
-    {
-        "id": 16,
-        "tipo": "apartamento",
-        "descripcion": "Cómodo apartamento en zona residencial.",
-        "direccion": "Carrera 7 #38-23, Cali",
-        "detalles": "4 habitaciones, 3 baños, patio trasero, garaje.",
-        "precio": 196826107,
-        "imagenes": [
-            "img2.jpg",
-            "img1.jpg"
-        ],
-        "imagen_default": "img2.jpg"
-    },
-    {
-        "id": 17,
-        "tipo": "casa",
-        "descripcion": "Amplia casa con jardín y garaje.",
-        "direccion": "Transversal 19 #22-8, Medellín",
-        "detalles": "3 habitaciones, 2 baños, cocina integral.",
-        "precio": 162836317,
-        "imagenes": [
-            "img3.jpg",
-            "img4.jpg",
-            "img5.jpg",
-            "img1.jpg"
-        ],
-        "imagen_default": "img3.jpg"
-    },
-    {
-        "id": 18,
-        "tipo": "casa",
-        "descripcion": "Amplia casa con jardín y garaje.",
-        "direccion": "Calle 65 #39-42, Cartagena",
-        "detalles": "2 habitaciones, 1 baño, sala-comedor.",
-        "precio": 284078164,
-        "imagenes": [
-            "img1.jpg",
-            "img3.jpg"
-        ],
-        "imagen_default": "img1.jpg"
-    },
-    {
-        "id": 19,
-        "tipo": "oficina",
-        "descripcion": "Moderna oficina ubicada en zona empresarial.",
-        "direccion": "Avenida 52 #8-11, Medellín",
-        "detalles": "2 habitaciones, 1 baño, sala-comedor.",
-        "precio": 545309472,
-        "imagenes": [
-            "img3.jpg",
-            "img2.jpg",
-            "img4.jpg"
-        ],
-        "imagen_default": "img3.jpg"
     }
+   
 ]
