@@ -12,7 +12,7 @@
             "img1.jpg",
             "img4.jpg"
         ],
-        "imagen_default": "public/imagen_default/img3.jpg"
+        "imagen_default": "imagen_default/img3.jpg"
     },
     {
         "id": 2,
