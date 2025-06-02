@@ -54,6 +54,7 @@
             "img1.jpg",
             "img4.jpg",
             "img5.jpg"
+            
         ],
         "imagen_default": "img2.jpg"
     },
@@ -68,6 +69,7 @@
             "img5.jpg",
             "img2.jpg",
             "img3.jpg"
+
         ],
         "imagen_default": "img5.jpg"
     },

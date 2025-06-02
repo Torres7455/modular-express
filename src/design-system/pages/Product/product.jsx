@@ -10,22 +10,25 @@ export default function Product() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
     if (id) {
-      setProduct(products[id]);
+      // Buscar producto con id igual al parámetro (convertir a número)
+      const prod = products.find(p => p.id === Number(id));
+      setProduct(prod || null);
     } else {
-      setProduct(products[1]);
+      setProduct(products[0]); // primer producto por defecto
     }
   }, []);
 
+  if (!product) return <p>Producto no encontrado</p>;
+
   return (
     <>
-    <img src="public\Logo.jpeg" alt="" />
+      <img src="public/Logo.jpeg" alt="" />
       <section>
         <ViewImage data={product} />
       </section>
       <section>
         <DescripcionProducto data={product} />
       </section>
-      <img src="public\Logo.jpeg" alt="" />
     </>
   );
 }
