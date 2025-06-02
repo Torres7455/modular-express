@@ -164,8 +164,9 @@ export default function Home() {
     <div className="home-container">
       {/* Encabezado */}
       <section className="home-hero">
-        <Title level={2}>Casa en Residencial Bello Oeste</Title>
-        <p>Con hermosa vista a la ciudad y acabados de lujo</p>
+        <Title level={2}>MODULAR EXPRESS</Title>
+        <p>Ayudamos a los propietarios a transformar viviendas evitando los problemas de la construcción tradicional.
+Gracias al uso del sistema modular, hemos seleccionado las mejores soluciones para nuestros clientes, buscamos productos que dispongan de entrega rápida, que signifiquen un ahorro de costes y un tiempo de instalación mínimo para poder darle uso sin necesidad de obras imprevisibles para su instalación.</p>
         <Button type="primary" size="large">
           Conozca más
         </Button>
