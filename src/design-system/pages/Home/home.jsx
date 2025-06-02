@@ -1,18 +1,17 @@
 import { Tabs, Card, Row, Col, Button, List, Typography, message, Input } from "antd";
 import { useState } from "react";
-import Searcher from "../../templates/home/searcher/searcher"
+import Searcher from "../../templates/home/searcher/searcher";
+import Hero from "../../templates/home/hero/hero";
 import "./home.css";
+
 const { Meta } = Card;
 const { Title, Text } = Typography;
 
 export default function Home() {
   const [cart, setCart] = useState([]);
 
-  // Estados para inputs
   const [minPriceInput, setMinPriceInput] = useState("");
   const [maxPriceInput, setMaxPriceInput] = useState("");
-
-  // Estados que se usan para filtrar realmente (se actualizan al hacer click en buscar)
   const [minPriceFilter, setMinPriceFilter] = useState(null);
   const [maxPriceFilter, setMaxPriceFilter] = useState(null);
 
@@ -49,7 +48,6 @@ export default function Home() {
     setCart([]);
   };
 
-  // Filtra items con los filtros aplicados
   const filterByPrice = (items) => {
     return items.filter((item) => {
       if (minPriceFilter !== null && item.price < minPriceFilter) return false;
@@ -95,16 +93,13 @@ export default function Home() {
 
   const total = cart.reduce((sum, item) => sum + item.price, 0);
 
-  // Función que actualiza los filtros al pulsar "Buscar"
   const onSearchClick = () => {
     const min = parseFloat(minPriceInput);
     const max = parseFloat(maxPriceInput);
-
     setMinPriceFilter(!isNaN(min) ? min : null);
     setMaxPriceFilter(!isNaN(max) ? max : null);
   };
 
-  // Función para limpiar filtros y mostrar todo
   const onClearFilters = () => {
     setMinPriceInput("");
     setMaxPriceInput("");
@@ -113,49 +108,18 @@ export default function Home() {
   };
 
   return (
-    <div >
-
-      {/* Encabezado */}
-      <div className="header-container" >
-        <Title  level={3}>
-          Modular Express
-        </Title>
-
+    <div>
+      {/* Encabezado Hero */}
+      <div>
         <div>
-          <Title level={4} >
-            ¿Por qué elegir Modular Express?
-          </Title>
-
-          <p>
-            En <strong>Modular Express</strong> transformamos la forma de adquirir viviendas, oficinas y espacios comerciales.
-            Ofrecemos <strong>rapidez, eficiencia y personalización</strong> con soluciones modulares que se adaptan a tus necesidades.
-          </p>
-
-          <p>A diferencia de la competencia, nuestros clientes disfrutan de:</p>
-
-          <ul >
-            <li>✅ Entregas en tiempos récord</li>
-            <li>✅ Planos y diseños personalizados incluidos</li>
-            <li>✅ Asesoría legal y técnica gratuita</li>
-            <li>✅ Estructuras de alta calidad y resistencia</li>
-            <li>✅ Soporte postventa garantizado</li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Hero */}
-      <div
-        
-      >
-        <div>
-          <Title level={2} >Casa en Residencial Bello Oeste</Title>
+          <Title level={2}>Casa en Residencial Bello Oeste</Title>
           <p>Con hermosa vista a la ciudad y acabados de lujo</p>
-          <Button type="primary" size="large" >Conozca más</Button>
+          <Button type="primary" size="large">Conozca más</Button>
         </div>
       </div>
 
       {/* Buscador */}
-      <div >
+      <div>
         <Title level={4}>Encuentre su Módulo</Title>
         <Row gutter={16}>
           <Col span={6}>
@@ -189,13 +153,13 @@ export default function Home() {
         </Row>
       </div>
 
-      {/* Tabs de propiedades */}
-      <div >
+      {/* Propiedades */}
+      <div>
         <Tabs defaultActiveKey="casas" items={items} />
       </div>
 
       {/* Carrito */}
-      <div >
+      <div>
         <Title level={4}>🛒 Carrito de compras</Title>
         {cart.length === 0 ? (
           <p>Tu carrito está vacío.</p>
@@ -216,9 +180,9 @@ export default function Home() {
                 </List.Item>
               )}
             />
-            <div >
+            <div>
               <Text strong>Total: ${total.toLocaleString()}</Text>
-              <div >
+              <div>
                 <Button type="primary" onClick={handleCheckout}>
                   Finalizar compra
                 </Button>
@@ -229,8 +193,8 @@ export default function Home() {
       </div>
 
       {/* Servicios */}
-      <div >
-        <Title level={3} >Conozca nuestros servicios</Title>
+      <div>
+        <Title level={3}>Conozca nuestros servicios</Title>
         <Row gutter={[16, 16]} justify="center">
           <Col xs={24} sm={12} md={6}><div>📌 Asesoría Legal</div></Col>
           <Col xs={24} sm={12} md={6}><div>🧾 Diseños y Planos</div></Col>
@@ -238,8 +202,13 @@ export default function Home() {
           <Col xs={24} sm={12} md={6}><div>👨‍💼 Servicios de Topografía</div></Col>
         </Row>
       </div>
+
+      {/* Secciones adicionales */}
       <section>
-       <Searcher></Searcher> 
+        <Hero />
+      </section>
+      <section>
+        <Searcher />
       </section>
     </div>
   );
