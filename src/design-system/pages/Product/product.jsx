@@ -2,6 +2,7 @@ import DescripcionProducto from "../../templates/Producto/descripcion-producto/d
 import ViewImage from "../../templates/Producto/viewimage/viewImage";
 import products from "../../../../DB/inmuebles_ejemplo.json";
 import { useEffect, useState } from "react";
+import "./product.css"
 
 export default function Product() {
   const [product, setProduct] = useState(null);
@@ -22,7 +23,6 @@ export default function Product() {
 
   return (
     <>
-      <img src="public/Logo.jpeg" alt="" />
       <section>
         <ViewImage data={product} />
       </section>

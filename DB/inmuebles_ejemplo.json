@@ -5,14 +5,14 @@
         "descripcion": "Cómodo apartamento en zona residencial.",
         "direccion": "Calle 1 #89-45, Barranquilla",
         "detalles": "3 habitaciones, 2 baños, cocina integral.",
-        "precio": 698013208,
+        "precio": "$6.988.900",
         "imagenes": [
             "img3.jpg",
             "img2.jpg",
             "img1.jpg",
             "img4.jpg"
         ],
-        "imagen_default": "img3.jpg"
+        "imagen_default": "public/imagen_default/img3.jpg"
     },
     {
         "id": 2,
@@ -27,7 +27,7 @@
             "img1.jpg",
             "img4.jpg"
         ],
-        "imagen_default": "img5.jpg"
+        "imagen_default": "public/imagen_default/casa1.jpg"
     },
     {
         "id": 3,
@@ -40,7 +40,7 @@
             "img1.jpg",
             "img3.jpg"
         ],
-        "imagen_default": "img1.jpg"
+        "imagen_default": "public/imagen_default/oficina1.jpg"
     },
     {
         "id": 4,
@@ -56,7 +56,7 @@
             "img5.jpg"
             
         ],
-        "imagen_default": "img2.jpg"
+        "imagen_default": "public/imagen_default/oficina2.jpg"
     },
     {
         "id": 5,
@@ -71,7 +71,7 @@
             "img3.jpg"
 
         ],
-        "imagen_default": "img5.jpg"
+        "imagen_default": "public/imagen_default/oficina3.jpg"
     },
     {
         "id": 6,
@@ -87,7 +87,7 @@
             "img3.jpg",
             "img1.jpg"
         ],
-        "imagen_default": "img2.jpg"
+        "imagen_default": "public/imagen_default/casa2.jpg"
     },
     {
         "id": 7,
@@ -101,7 +101,7 @@
             "img3.jpg",
             "img4.jpg"
         ],
-        "imagen_default": "img2.jpg"
+        "imagen_default": "public/imagen_default/apartamento1.jpg"
     },
     {
         "id": 8,
@@ -115,7 +115,7 @@
             "img2.jpg",
             "img3.jpg"
         ],
-        "imagen_default": "img1.jpg"
+        "imagen_default": "public/imagen_default/casa3.jpg"
     },
     {
         "id": 9,
@@ -129,7 +129,7 @@
             "img5.jpg",
             "img1.jpg"
         ],
-        "imagen_default": "img3.jpg"
+        "imagen_default": "public/imagen_default/apartamento2.jpg"
     },
     {
         "id": 10,
@@ -144,7 +144,7 @@
             "img1.jpg",
             "img4.jpg"
         ],
-        "imagen_default": "img3.jpg"
+        "imagen_default": "public/imagen_default/apartamento3.jpg"
     }
    
 ]

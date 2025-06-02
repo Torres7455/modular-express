@@ -1,3 +1,7 @@
-export default function ViewImage () {
-    return <> soy el visualizador de imagenes</>
+export default function ViewImage(data) {
+  return (
+    <>
+      <img className="presentation-image"  src={data?.data?.imagen_default} alt="" />
+    </>
+  );
 }
