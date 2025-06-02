@@ -5,13 +5,13 @@ import './ProductList.css';
 
 const { Title, Paragraph, Text } = Typography;
 
-const modulesData = [
+//const modulesData = [
   // ... tu data como está ...
-];
+//];
 
-const columns = [
+//const columns = [
   // ... tus columnas como están ...
-];
+//];
 
 export default function ModulesComparison() {
  return (
