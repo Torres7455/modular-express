@@ -1,15 +1,25 @@
-import { Tabs, Card, Row, Col, Button, List, Typography, message, Input } from "antd";
+import {
+  Tabs,
+  Card,
+  Row,
+  Col,
+  Button,
+  List,
+  Typography,
+  message,
+  Input,
+} from "antd";
 import { useState } from "react";
 import Searcher from "../../templates/home/searcher/searcher";
 import Hero from "../../templates/home/hero/hero";
 import "./home.css";
+import casa1 from "../../../images/IMAGEN1.jpeg";
 
 const { Meta } = Card;
 const { Title, Text } = Typography;
 
 export default function Home() {
   const [cart, setCart] = useState([]);
-
   const [minPriceInput, setMinPriceInput] = useState("");
   const [maxPriceInput, setMaxPriceInput] = useState("");
   const [minPriceFilter, setMinPriceFilter] = useState(null);
@@ -17,16 +27,46 @@ export default function Home() {
 
   const modules = {
     casas: [
-      { title: "Casa Moderna", desc: "3 habitaciones, 2 baños", img: "https://via.placeholder.com/300x200?text=Casa+1", price: 150000 },
-      { title: "Casa Compacta", desc: "2 habitaciones, 1 baño", img: "https://via.placeholder.com/300x200?text=Casa+2", price: 100000 },
+      {
+        title: "Casa Moderna",
+        desc: "3 habitaciones, 2 baños",
+        img: casa1,
+        price: 150000,
+      },
+      {
+        title: "Casa Compacta",
+        desc: "2 habitaciones, 1 baño",
+        img: "https://via.placeholder.com/300x200?text=Casa+2",
+        price: 100000,
+      },
     ],
     edificios: [
-      { title: "Edificio Comercial", desc: "5 pisos, ascensor", img: "https://via.placeholder.com/300x200?text=Edificio+1", price: 500000 },
-      { title: "Edificio Residencial", desc: "10 departamentos", img: "https://via.placeholder.com/300x200?text=Edificio+2", price: 700000 },
+      {
+        title: "Edificio Comercial",
+        desc: "5 pisos, ascensor",
+        img: "https://via.placeholder.com/300x200?text=Edificio+1",
+        price: 500000,
+      },
+      {
+        title: "Edificio Residencial",
+        desc: "10 departamentos",
+        img: "https://via.placeholder.com/300x200?text=Edificio+2",
+        price: 700000,
+      },
     ],
     oficinas: [
-      { title: "Oficina Móvil", desc: "Espacio para 4 personas", img: "https://via.placeholder.com/300x200?text=Oficina+1", price: 60000 },
-      { title: "Oficina Premium", desc: "Espacio equipado con A/C", img: "https://via.placeholder.com/300x200?text=Oficina+2", price: 90000 },
+      {
+        title: "Oficina Móvil",
+        desc: "Espacio para 4 personas",
+        img: "https://via.placeholder.com/300x200?text=Oficina+1",
+        price: 60000,
+      },
+      {
+        title: "Oficina Premium",
+        desc: "Espacio equipado con A/C",
+        img: "https://via.placeholder.com/300x200?text=Oficina+2",
+        price: 90000,
+      },
     ],
   };
 
@@ -58,37 +98,44 @@ export default function Home() {
 
   const renderCards = (items) => {
     const filtered = filterByPrice(items);
-    return (
-      <>
-        {filtered.length === 0 ? (
-          <Text>No hay resultados para el filtro actual.</Text>
-        ) : (
-          <Row gutter={[16, 16]}>
-            {filtered.map((item, index) => (
-              <Col xs={24} sm={12} md={8} lg={6} key={index}>
-                <Card
-                  hoverable
-                  cover={<img alt={item.title} src={item.img} />}
-                  actions={[
-                    <Button type="primary" onClick={() => handleAddToCart(item)}>
-                      Agregar al carrito
-                    </Button>,
-                  ]}
-                >
-                  <Meta title={item.title} description={`${item.desc} — $${item.price.toLocaleString()}`} />
-                </Card>
-              </Col>
-            ))}
-          </Row>
-        )}
-      </>
+    return filtered.length === 0 ? (
+      <Text>No hay resultados para el filtro actual.</Text>
+    ) : (
+      <Row gutter={[16, 16]}>
+        {filtered.map((item, index) => (
+          <Col xs={24} sm={12} md={8} lg={6} key={index}>
+            <Card
+              hoverable
+              cover={<img alt={item.title} src={item.img} />}
+              actions={[
+                <Button type="primary" onClick={() => handleAddToCart(item)}>
+                  Agregar al carrito
+                </Button>,
+              ]}
+            >
+              <Meta
+                title={item.title}
+                description={`${item.desc} — $${item.price.toLocaleString()}`}
+              />
+            </Card>
+          </Col>
+        ))}
+      </Row>
     );
   };
 
   const items = [
     { key: "casas", label: "Casas", children: renderCards(modules.casas) },
-    { key: "edificios", label: "Edificios", children: renderCards(modules.edificios) },
-    { key: "oficinas", label: "Oficinas", children: renderCards(modules.oficinas) },
+    {
+      key: "edificios",
+      label: "Edificios",
+      children: renderCards(modules.edificios),
+    },
+    {
+      key: "oficinas",
+      label: "Oficinas",
+      children: renderCards(modules.oficinas),
+    },
   ];
 
   const total = cart.reduce((sum, item) => sum + item.price, 0);
@@ -108,18 +155,18 @@ export default function Home() {
   };
 
   return (
-    <div>
-      {/* Encabezado Hero */}
-      <div>
-        <div>
-          <Title level={2}>Casa en Residencial Bello Oeste</Title>
-          <p>Con hermosa vista a la ciudad y acabados de lujo</p>
-          <Button type="primary" size="large">Conozca más</Button>
-        </div>
-      </div>
+    <div className="home-container">
+      {/* Encabezado */}
+      <section className="home-hero">
+        <Title level={2}>Casa en Residencial Bello Oeste</Title>
+        <p>Con hermosa vista a la ciudad y acabados de lujo</p>
+        <Button type="primary" size="large">
+          Conozca más
+        </Button>
+      </section>
 
       {/* Buscador */}
-      <div>
+      <section className="home-search">
         <Title level={4}>Encuentre su Módulo</Title>
         <Row gutter={16}>
           <Col span={6}>
@@ -151,15 +198,15 @@ export default function Home() {
             </Button>
           </Col>
         </Row>
-      </div>
+      </section>
 
       {/* Propiedades */}
-      <div>
+      <section className="home-tabs">
         <Tabs defaultActiveKey="casas" items={items} />
-      </div>
+      </section>
 
       {/* Carrito */}
-      <div>
+      <section className="home-cart">
         <Title level={4}>🛒 Carrito de compras</Title>
         {cart.length === 0 ? (
           <p>Tu carrito está vacío.</p>
@@ -171,16 +218,23 @@ export default function Home() {
               renderItem={(item, index) => (
                 <List.Item
                   actions={[
-                    <Button danger size="small" onClick={() => handleRemoveFromCart(index)}>
+                    <Button
+                      danger
+                      size="small"
+                      onClick={() => handleRemoveFromCart(index)}
+                    >
                       ❌ Eliminar
                     </Button>,
                   ]}
                 >
-                  <Text strong>{item.title}</Text> — {item.desc} — <Text type="success">${item.price.toLocaleString()}</Text>
+                  <Text strong>{item.title}</Text> — {item.desc} —{' '}
+                  <Text type="success">
+                    ${item.price.toLocaleString()}
+                  </Text>
                 </List.Item>
               )}
             />
-            <div>
+            <div className="home-cart-total">
               <Text strong>Total: ${total.toLocaleString()}</Text>
               <div>
                 <Button type="primary" onClick={handleCheckout}>
@@ -190,10 +244,10 @@ export default function Home() {
             </div>
           </>
         )}
-      </div>
+      </section>
 
       {/* Servicios */}
-      <div>
+      <section className="home-services">
         <Title level={3}>Conozca nuestros servicios</Title>
         <Row gutter={[16, 16]} justify="center">
           <Col xs={24} sm={12} md={6}><div>📌 Asesoría Legal</div></Col>
@@ -201,7 +255,7 @@ export default function Home() {
           <Col xs={24} sm={12} md={6}><div>🏦 Intermediación Módulos</div></Col>
           <Col xs={24} sm={12} md={6}><div>👨‍💼 Servicios de Topografía</div></Col>
         </Row>
-      </div>
+      </section>
 
       {/* Secciones adicionales */}
       <section>

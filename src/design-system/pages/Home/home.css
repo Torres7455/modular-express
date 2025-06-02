@@ -1,89 +1,46 @@
-/* Encabezado centrado con fondo moderno */
-.header-container {
-  background: linear-gradient(135deg, #4a90e2, #50e3c2); /* azul turquesa degradado */
-  color: white;
-  padding: 50px 24px 70px 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;  /* Centra horizontalmente */
-  text-align: center;   /* Centra texto */
-  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.5);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.home-container {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
 }
 
-/* Título principal centrado */
-.header-container h3 {
-  margin: 0;
-  font-weight: 700;
-  font-size: 2.5rem;
-  letter-spacing: 1.2px;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.35);
+.home-hero {
+  text-align: center;
+  background: #e6f7ff;
+  padding: 40px 20px;
+  margin-bottom: 32px;
+  border-radius: 12px;
 }
 
-/* Contenedor de descripción centrado */
-.header-description {
-  margin-top: 28px;
-  max-width: 720px;
-  font-size: 1.15rem;
-  line-height: 1.7;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.25);
+.home-search {
+  margin-bottom: 32px;
 }
 
-/* Subtítulo dentro de la descripción */
-.header-description h4 {
-  margin-bottom: 18px;
-  font-weight: 700;
-  font-size: 1.75rem;
-  color: #d2f4f7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+.home-tabs {
+  margin-bottom: 32px;
 }
 
-/* Párrafos */
-.header-description p {
-  margin-bottom: 18px;
+.home-cart {
+  margin-top: 48px;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Lista de beneficios */
-.header-description ul {
-  padding-left: 0;
-  list-style: none;
+.home-cart-total {
   margin-top: 16px;
-  display: inline-block; /* para que la lista no ocupe todo el ancho */
-  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header-description ul li {
-  position: relative;
-  padding-left: 34px;
-  margin-bottom: 14px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #bff0f7;
+.home-services {
+  margin-top: 48px;
+  padding: 32px 0;
+  background: #fafafa;
+  text-align: center;
+  border-radius: 8px;
 }
 
-.header-description ul li::before {
-  content: "✅";
-  position: absolute;
-  left: 0;
-  top: 3px;
-  font-size: 1.25rem;
-  filter: drop-shadow(0 0 1px rgba(0,0,0,0.3));
-}
-
-/* Responsive */
-@media (max-width: 720px) {
-  .header-container {
-    padding: 40px 16px 60px 16px;
-  }
-  .header-description {
-    max-width: 100%;
-  }
-  .header-description ul {
-    display: block;
-    padding-left: 20px;
-  }
-}
