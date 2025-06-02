@@ -14,6 +14,12 @@ import Searcher from "../../templates/home/searcher/searcher";
 import Hero from "../../templates/home/hero/hero";
 import "./home.css";
 import casa1 from "../../../images/IMAGEN1.jpeg";
+import casa2 from "../../../images/IMAGEN2.png";
+import edificios1 from "../../../images/edificio1.jpg";
+import edificios2 from "../../../images/images.jpg";
+import oficina1 from "../../../images/oficina1.jpg";
+import oficina2 from "../../../images/oficina2.jpg";
+
 
 const { Meta } = Card;
 const { Title, Text } = Typography;
@@ -36,7 +42,7 @@ export default function Home() {
       {
         title: "Casa Compacta",
         desc: "2 habitaciones, 1 baño",
-        img: "https://via.placeholder.com/300x200?text=Casa+2",
+        img: casa2,
         price: 100000,
       },
     ],
@@ -44,13 +50,13 @@ export default function Home() {
       {
         title: "Edificio Comercial",
         desc: "5 pisos, ascensor",
-        img: "https://via.placeholder.com/300x200?text=Edificio+1",
+        img: edificios1,
         price: 500000,
       },
       {
         title: "Edificio Residencial",
         desc: "10 departamentos",
-        img: "https://via.placeholder.com/300x200?text=Edificio+2",
+        img: edificios2,
         price: 700000,
       },
     ],
@@ -58,13 +64,13 @@ export default function Home() {
       {
         title: "Oficina Móvil",
         desc: "Espacio para 4 personas",
-        img: "https://via.placeholder.com/300x200?text=Oficina+1",
+        img: oficina1,
         price: 60000,
       },
       {
         title: "Oficina Premium",
         desc: "Espacio equipado con A/C",
-        img: "https://via.placeholder.com/300x200?text=Oficina+2",
+        img: oficina2,
         price: 90000,
       },
     ],
